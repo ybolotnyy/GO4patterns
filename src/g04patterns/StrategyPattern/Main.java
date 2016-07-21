@@ -1,4 +1,4 @@
-package g04patterns;
+package g04patterns.StrategyPattern;
 
 public class Main {
 
