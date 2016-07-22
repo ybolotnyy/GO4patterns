@@ -6,6 +6,6 @@ package g04patterns.DecoratorPattern;
 public class Computer {
 
     public String description() {
-        return "This computer has: ";
+        return "This computer has: \n";
     }
 }
