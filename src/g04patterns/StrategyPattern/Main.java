@@ -4,9 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        new Helicopter().go();
-        new Jet().go();
-        new StreetRacer().go();
-        new Vehicle().go();
+        Helicopter helicopter = new Helicopter();
+        Jet jet = new Jet();
+        StreetRacer streetRacer = new StreetRacer();
+
+        helicopter.go();
+        jet.go();
+        streetRacer.go();
     }
 }
