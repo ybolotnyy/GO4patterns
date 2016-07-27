@@ -1,4 +1,4 @@
-package g04patterns.ObserverPattern;
+package g04patterns.ObserverPattern.Interfaces;
 
 public interface Subject {
     public void registerObserver(Observer o);

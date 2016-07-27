@@ -1,10 +1,10 @@
 package g04patterns.ObserverPattern;
 
+import g04patterns.ObserverPattern.Interfaces.Observer;
+import g04patterns.ObserverPattern.Interfaces.Subject;
+
 import java.util.Vector;
 
-/**
- * Created by BYN on 7/26/16.
- */
 public class Database implements Subject
 {
     private Vector<Observer> observers;
@@ -24,11 +24,16 @@ public class Database implements Subject
         observers.remove(o);
     }
 
-
     public void notifyObservers() {
         for (int loopIndex = 0; loopIndex < observers.size(); loopIndex++){
             Observer observer = (Observer)observers.get(loopIndex);
             observer.update(operation, record);
         }
+    }
+
+    public void editRecord(String operation, String record) {
+        this.operation = operation;
+        this.record = record;
+        notifyObservers();
     }
 }
