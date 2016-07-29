@@ -1,4 +1,4 @@
-package g04patterns.Singleton.SingletonGeneric;
+package g04patterns.Singleton.GenericSingleton;
 
 public class Database {
     private String name;

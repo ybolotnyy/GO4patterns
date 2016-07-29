@@ -1,4 +1,4 @@
-package g04patterns.Singleton.SingletonSynchronized;
+package g04patterns.Singleton.SynchronizedSingleton;
 
 
 public class TestSingletonSynchronized implements Runnable {
