@@ -1,4 +1,4 @@
-package g04patterns.Observer.Interfaces;
+package g04patterns.Observer.ObserverGoF.Interfaces;
 
 public interface Observer
 {

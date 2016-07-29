@@ -1,8 +1,8 @@
-package g04patterns.ObserverViaJavaClasses;
+package g04patterns.Observer.ObserverViaJavaClasses;
 
-import g04patterns.ObserverViaJavaClasses.Observers.ArchiveObserver;
-import g04patterns.ObserverViaJavaClasses.Observers.BossObserver;
-import g04patterns.ObserverViaJavaClasses.Observers.CustomerObserver;
+import g04patterns.Observer.ObserverViaJavaClasses.Observers.ArchiveObserver;
+import g04patterns.Observer.ObserverViaJavaClasses.Observers.BossObserver;
+import g04patterns.Observer.ObserverViaJavaClasses.Observers.CustomerObserver;
 
 import java.util.Observer;
 

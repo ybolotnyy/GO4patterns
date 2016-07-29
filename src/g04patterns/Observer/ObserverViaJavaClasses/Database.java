@@ -1,4 +1,4 @@
-package g04patterns.ObserverViaJavaClasses;
+package g04patterns.Observer.ObserverViaJavaClasses;
 
 import java.util.Observable;
 

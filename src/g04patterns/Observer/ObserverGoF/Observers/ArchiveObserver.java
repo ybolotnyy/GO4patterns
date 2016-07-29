@@ -1,6 +1,6 @@
-package g04patterns.Observer.Observers;
+package g04patterns.Observer.ObserverGoF.Observers;
 
-import g04patterns.Observer.Interfaces.Observer;
+import g04patterns.Observer.ObserverGoF.Interfaces.Observer;
 
 public class ArchiveObserver implements Observer{
     public void update(String operation, String record) {

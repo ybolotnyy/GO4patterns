@@ -1,6 +1,6 @@
-package g04patterns.ObserverViaJavaClasses.Observers;
+package g04patterns.Observer.ObserverViaJavaClasses.Observers;
 
-import g04patterns.ObserverViaJavaClasses.Database;
+import g04patterns.Observer.ObserverViaJavaClasses.Database;
 
 import java.util.Observable;
 import java.util.Observer;

@@ -1,7 +1,7 @@
-package g04patterns.Observer;
+package g04patterns.Observer.ObserverGoF;
 
-import g04patterns.Observer.Interfaces.Observer;
-import g04patterns.Observer.Interfaces.Subject;
+import g04patterns.Observer.ObserverGoF.Interfaces.Observer;
+import g04patterns.Observer.ObserverGoF.Interfaces.Subject;
 
 import java.util.Vector;
 

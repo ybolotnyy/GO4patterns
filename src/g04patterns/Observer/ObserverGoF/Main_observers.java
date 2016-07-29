@@ -1,9 +1,9 @@
-package g04patterns.Observer;
+package g04patterns.Observer.ObserverGoF;
 
-import g04patterns.Observer.Interfaces.Observer;
-import g04patterns.Observer.Observers.ArchiveObserver;
-import g04patterns.Observer.Observers.BossObserver;
-import g04patterns.Observer.Observers.LoggerObserver;
+import g04patterns.Observer.ObserverGoF.Interfaces.Observer;
+import g04patterns.Observer.ObserverGoF.Observers.ArchiveObserver;
+import g04patterns.Observer.ObserverGoF.Observers.BossObserver;
+import g04patterns.Observer.ObserverGoF.Observers.LoggerObserver;
 
 /**
  * Created by byn on 7/21/16.

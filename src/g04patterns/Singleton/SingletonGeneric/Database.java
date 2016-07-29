@@ -1,6 +1,4 @@
-package g04patterns.Singleton;
-
-import javax.xml.crypto.Data;
+package g04patterns.Singleton.SingletonGeneric;
 
 public class Database {
     private String name;
