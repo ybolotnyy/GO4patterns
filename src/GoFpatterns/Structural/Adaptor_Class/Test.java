@@ -5,7 +5,9 @@ public class Test {
 
     public static void main(String[] args) {
 
-        AdaptorClass adaptor = new AdaptorClass("Ivan Danko");
+        AdaptorClass adaptor = new AdaptorClass();
+        adaptor.setFirstName("Ivan");
+        adaptor.setLastName("Danko");
 
         System.out.printf("First name: %s \n" +
                            "Last name: %s \n",

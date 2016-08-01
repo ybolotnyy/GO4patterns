@@ -6,8 +6,8 @@ public class AdaptorClass extends GoFpatterns.Structural.Adaptor_Class.SourceCla
     String firstName;
     String lastName;
 
-    public AdaptorClass(String n) {
-        super(n);
+    public AdaptorClass() {
+        super();
     }
 
     public void setFirstName(String fn) {
