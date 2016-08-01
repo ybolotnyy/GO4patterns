@@ -1,24 +1,24 @@
 package GoFpatterns.Structural.AdaptorObject;
 
-public class AdaptorClass implements AdaptorInterface {
+public class AdaptorClass {
     SourceClass sourceObject;
     String firstName;
     String lastName;
 
     AdaptorClass(SourceClass so) {
         sourceObject = so;
-        firstName = so.getName().split(" ")[0];
-        lastName = so.getName().split(" ")[1];
+        firstName = so.getLongName().split(" ")[0];
+        lastName = so.getLongName().split(" ")[1];
     }
 
     public void setFirstName(String fn) {
         firstName = fn;
-        sourceObject.setName(firstName + " " + lastName);
+        sourceObject.setLongName(firstName + " " + lastName);
     }
 
     public void setLastName(String ln) {
         lastName = ln;
-        sourceObject.setName(firstName + " " + lastName);
+        sourceObject.setLongName(firstName + " " + lastName);
     }
 
     public String getFirstName() {

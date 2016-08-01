@@ -4,7 +4,7 @@ public class Test {
 
     public static void main(String[] args) {
         SourceClass sourceObject = new SourceClass();
-        sourceObject.setName("Ivan Petrov");
+        sourceObject.setLongName("Ivan Petrov");
 
         AdaptorClass adaptor = new AdaptorClass(sourceObject);
 
@@ -15,10 +15,10 @@ public class Test {
 
         adaptor.setFirstName("Petr");
         System.out.printf("sourceObject > name: %s \n",
-                sourceObject.getName());
+                sourceObject.getLongName());
 
         adaptor.setLastName("Ivanov");
         System.out.printf("sourceObject > name: %s \n",
-                sourceObject.getName());
+                sourceObject.getLongName());
     }
 }

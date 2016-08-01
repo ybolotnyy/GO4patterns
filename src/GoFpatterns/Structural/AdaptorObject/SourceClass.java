@@ -1,13 +1,13 @@
 package GoFpatterns.Structural.AdaptorObject;
 
-public class SourceClass implements SourceInterface {
+public class SourceClass {
     String longName;
 
-    public void setName(String n) {
+    public void setLongName(String n) {
         longName = n;
     }
 
-    public String getName() {
+    public String getLongName() {
         return longName;
     }
 }
