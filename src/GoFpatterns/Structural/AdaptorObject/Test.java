@@ -3,10 +3,10 @@ package GoFpatterns.Structural.AdaptorObject;
 public class Test {
 
     public static void main(String[] args) {
-        SourceClass source = new SourceClass();
-        source.setName("Ivan Petrov");
+        SourceClass sourceObject = new SourceClass();
+        sourceObject.setName("Ivan Petrov");
 
-        AdaptorClass adaptor = new AdaptorClass(source);
+        AdaptorClass adaptor = new AdaptorClass(sourceObject);
 
         System.out.printf("First name: %s \n" +
                            "Last name: %s \n",
@@ -15,10 +15,10 @@ public class Test {
 
         adaptor.setFirstName("Petr");
         System.out.printf("sourceObject > name: %s \n",
-                source.getName());
+                sourceObject.getName());
 
         adaptor.setLastName("Ivanov");
         System.out.printf("sourceObject > name: %s \n",
-                source.getName());
+                sourceObject.getName());
     }
 }
