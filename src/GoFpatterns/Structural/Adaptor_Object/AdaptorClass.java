@@ -1,4 +1,4 @@
-package GoFpatterns.Structural.AdaptorObject;
+package GoFpatterns.Structural.Adaptor_Object;
 
 public class AdaptorClass {
     SourceClass sourceObject;
