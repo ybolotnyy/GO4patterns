@@ -1,11 +1,11 @@
 package GoFpatterns.Structural.AdaptorObject;
 
-public class SuccessorClass implements SuccessorInterface{
+public class AdaptorClass implements AdaptorInterface {
     SourceClass sourceObject;
     String firstName;
     String lastName;
 
-    SuccessorClass(SourceClass so) {
+    AdaptorClass(SourceClass so) {
         sourceObject = so;
         firstName = so.getName().split(" ")[0];
         lastName = so.getName().split(" ")[1];
@@ -13,10 +13,12 @@ public class SuccessorClass implements SuccessorInterface{
 
     public void setFirstName(String fn) {
         firstName = fn;
+        sourceObject.setName(firstName + " " + lastName);
     }
 
     public void setLastName(String ln) {
         lastName = ln;
+        sourceObject.setName(firstName + " " + lastName);
     }
 
     public String getFirstName() {

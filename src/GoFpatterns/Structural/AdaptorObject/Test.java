@@ -6,10 +6,19 @@ public class Test {
         SourceClass source = new SourceClass();
         source.setName("Ivan Petrov");
 
-        SuccessorClass adaptor = new SuccessorClass(source);
+        AdaptorClass adaptor = new AdaptorClass(source);
+
         System.out.printf("First name: %s \n" +
                            "Last name: %s \n",
                 adaptor.getFirstName(),
                 adaptor.getLastName());
+
+        adaptor.setFirstName("Petr");
+        System.out.printf("sourceObject > name: %s \n",
+                source.getName());
+
+        adaptor.setLastName("Ivanov");
+        System.out.printf("sourceObject > name: %s \n",
+                source.getName());
     }
 }
