@@ -4,8 +4,10 @@ import GoFpatterns.Creational.Builder.Interfaces.RobotBuildable;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+import static GoFpatterns.Creational.Builder.Interfaces.RobotBuildable.actionType.findParts;
+
 public class RoboHooverBuildable implements RobotBuildable {
-  ArrayList<actionType> actions;
+  ArrayList<Integer> actions;
 
 
   public void loadActions(ArrayList a) {
@@ -13,18 +15,18 @@ public class RoboHooverBuildable implements RobotBuildable {
   }
 
   public void go() {
-    Iterator<actionType> actionsIterator = actions.iterator();
+    Iterator<Integer> actionsIterator = actions.iterator();
     while (actionsIterator.hasNext()) {
       switch (actionsIterator.next()) {
-        case findParts: findParts();
+        case 1: findParts();
           break;
-        case assembleIt: assembleIt();
+        case 2: assembleIt();
           break;
-        case switchOn: switchOn();
+        case 3: switchOn();
           break;
-        case switchOff: switchOff();
+        case 4: switchOff();
           break;
-        case testIt: testIt();
+        case 5: testIt();
           break;
       }
     }

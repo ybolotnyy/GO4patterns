@@ -7,31 +7,31 @@ import java.util.ArrayList;
 
 public class RoboHooverBuilder implements RobotBuilder {
   RoboHooverBuildable robot;
-  ArrayList<actionType> actions;
+  ArrayList<Integer> actions;
 
   public RoboHooverBuilder() {
     robot = new RoboHooverBuildable();
-    actions = new ArrayList<actionType>();
+    actions = new ArrayList<Integer>();
   }
 
   public void addFindParts() {
-    actions.add(actionType.findParts);
+    actions.add(new Integer(1));
   }
 
   public void addAssembleit() {
-    actions.add(actionType.assembleIt);
+    actions.add(new Integer(2));
   }
 
   public void addSwitchOn() {
-    actions.add(actionType.switchOn);
+    actions.add(new Integer(3));
   }
 
   public void addSwitchOff() {
-    actions.add(actionType.switchOff);
+    actions.add(new Integer(4));
   }
 
   public void addTestIt() {
-    actions.add(actionType.testIt);
+    actions.add(new Integer(5));
   }
 
   public RobotBuildable getRobot() {
