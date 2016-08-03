@@ -14,10 +14,8 @@ public class Test {
                 adaptor.getLastName());
 
         adaptor.setFirstName("Petr");
-        System.out.printf("sourceObject > name: %s \n",
-                sourceObject.getLongName());
-
         adaptor.setLastName("Ivanov");
+
         System.out.printf("sourceObject > name: %s \n",
                 sourceObject.getLongName());
     }
