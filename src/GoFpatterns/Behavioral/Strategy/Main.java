@@ -1,4 +1,4 @@
-package GoFpatterns.Behavioral.StrategyPattern;
+package GoFpatterns.Behavioral.Strategy;
 
 public class Main {
 

@@ -1,29 +1,30 @@
 package GoFpatterns.Creational.Builder;
 
 import GoFpatterns.Creational.Builder.Interfaces.RobotBuildable;
+import GoFpatterns.Creational.Builder.RoboHooverBuilder.actionType;
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class RoboHooverBuildable implements RobotBuildable {
-  ArrayList<Integer> actions;
+  ArrayList<actionType> actions;
 
   public void loadActions(ArrayList a) {
     actions = a;
   }
 
   public void go() {
-    Iterator<Integer> actionsIterator = actions.iterator();
+    Iterator<actionType> actionsIterator = actions.iterator();
     while (actionsIterator.hasNext()) {
       switch (actionsIterator.next()) {
-        case 1: findParts();
+        case findParts: findParts();
           break;
-        case 2: assembleIt();
+        case assembleIt: assembleIt();
           break;
-        case 3: switchOn();
+        case switchOn: switchOn();
           break;
-        case 4: switchOff();
+        case switchOff: switchOff();
           break;
-        case 5: testIt();
+        case testIt: testIt();
           break;
       }
     }

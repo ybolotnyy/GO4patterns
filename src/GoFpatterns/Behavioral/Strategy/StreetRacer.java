@@ -1,6 +1,6 @@
-package GoFpatterns.Behavioral.StrategyPattern;
+package GoFpatterns.Behavioral.Strategy;
 
-import GoFpatterns.Behavioral.StrategyPattern.StrategyAlgorithms.GoByDrivingFast;
+import GoFpatterns.Behavioral.Strategy.StrategyAlgorithms.GoByDrivingFast;
 
 /**
  * Created by byn on 7/21/16.
