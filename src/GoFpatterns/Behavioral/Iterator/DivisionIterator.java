@@ -12,10 +12,10 @@ public class DivisionIterator implements Iterator {
   }
 
   public boolean hasNext() {
-    if ((location < vps.length) && (vps[location + 1] != null)) {
+    if ((location < vps.length) && (vps[location] != null)) {
       return true;
     } else {
-      System.out.printf("Iterator reach the end of collection out: %d / %d \n",
+      System.out.printf("Iterator reach the end out of collection: %d / %d \n",
               location,
               vps.length);
 

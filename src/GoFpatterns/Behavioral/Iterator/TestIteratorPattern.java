@@ -7,19 +7,22 @@ public class TestIteratorPattern {
   }
 
   TestIteratorPattern(){
+
     Division division = new Division("AlfaBeta");
 
     division.addVP(new VP("Petr", "Customer Service"));
     division.addVP(new VP("Vlad", "Customer Support"));
     division.addVP(new VP("Marta", "Marketing"));
     division.addVP(new VP("Olga", "Sales"));
+    division.addVP(new VP("Tonya", "IT"));
+    division.addVP(new VP("Nick", "Eng"));
 
     DivisionIterator iterator = division.iterator();
 
-    iterator.next().print();
-    iterator.next().print();
-    iterator.next().print();
-    iterator.next().print();
+    while (iterator.hasNext()) {
+      VP vp = iterator.next();
+      vp.print();
+    }
   }
 }
 

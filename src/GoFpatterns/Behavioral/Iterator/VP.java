@@ -14,6 +14,6 @@ public class VP {
   }
 
   public void print() {
-    System.out.printf("VP's name: %s, division: %s \n", name, division);
+    System.out.printf("VP's name: %s from '%s' division \n", name, division);
   }
 }
