@@ -4,11 +4,8 @@ import GoFpatterns.Creational.Builder.Interfaces.RobotBuildable;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import static GoFpatterns.Creational.Builder.Interfaces.RobotBuildable.actionType.findParts;
-
 public class RoboHooverBuildable implements RobotBuildable {
   ArrayList<Integer> actions;
-
 
   public void loadActions(ArrayList a) {
     actions = a;
