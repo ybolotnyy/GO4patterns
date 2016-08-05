@@ -16,7 +16,7 @@ public class VP extends Corporate {
   }
 
   public void print() {
-    System.out.printf("VP %s from '%s' division", name, division);
+    System.out.printf("VP %s from '%s' division \n", name, division);
   }
 
   public Iterator iterator(){

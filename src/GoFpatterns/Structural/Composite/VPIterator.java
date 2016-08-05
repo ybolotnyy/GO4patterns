@@ -9,12 +9,10 @@ public class VPIterator implements Iterator {
     vp = v;
   }
 
-  @Override
   public boolean hasNext() {
     return false;
   }
 
-  @Override
   public VP next() {
     return vp;
   }
