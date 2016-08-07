@@ -1,4 +1,4 @@
-package GoFpatterns.Behavioral.State;
+package GoFpatterns.State.State_basic;
 
 public class TestRentalMethods {
   RentalMethods rentalMethods;

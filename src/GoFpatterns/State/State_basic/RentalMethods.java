@@ -1,4 +1,4 @@
-package GoFpatterns.Behavioral.State;
+package GoFpatterns.State.State_basic;
 
 import java.util.Random;
 
