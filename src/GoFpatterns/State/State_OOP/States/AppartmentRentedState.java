@@ -1,10 +1,9 @@
 package GoFpatterns.State.State_OOP.States;
 
-import GoFpatterns.State.State_OOP.Automat;
 import GoFpatterns.State.State_OOP.AutomatInterface;
-import GoFpatterns.State.State_OOP.StateInterface;
+import GoFpatterns.State.State_OOP.State;
 
-public class AppartmentRentedState implements StateInterface {
+public class AppartmentRentedState implements State {
   AutomatInterface automat;
 
   public AppartmentRentedState(AutomatInterface a) {

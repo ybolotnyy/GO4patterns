@@ -1,12 +1,11 @@
 package GoFpatterns.State.State_OOP.States;
 
 import GoFpatterns.State.State_OOP.AutomatInterface;
-import GoFpatterns.State.State_OOP.StateInterface;
-import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
+import GoFpatterns.State.State_OOP.State;
 
 import java.util.Random;
 
-public class GotApplicationState implements StateInterface {
+public class GotApplicationState implements State {
 
   AutomatInterface automat;
   Random random;

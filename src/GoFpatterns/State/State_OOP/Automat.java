@@ -5,12 +5,12 @@ import GoFpatterns.State.State_OOP.States.GotApplicationState;
 import GoFpatterns.State.State_OOP.States.WaitingState;
 
 public class Automat implements AutomatInterface {
-  StateInterface waitingState;
-  StateInterface gotApplicationState;
-  StateInterface appartmentRentedState;
-  StateInterface fullyRentedState;
+  State waitingState;
+  State gotApplicationState;
+  State appartmentRentedState;
+  State fullyRentedState;
   int count;
-  StateInterface state;
+  State state;
 
   public Automat (int n) {
     count = n;
@@ -34,23 +34,23 @@ public class Automat implements AutomatInterface {
     System.out.println(state.dispenseKeys());
   }
 
-  public void getState(StateInterface s) {
+  public void getState(State s) {
     state = s;
   }
 
-  public StateInterface getWaitingState() {
+  public State getWaitingState() {
     return waitingState;
   }
 
-  public StateInterface getGotApplicationState() {
+  public State getGotApplicationState() {
     return gotApplicationState;
   }
 
-  public StateInterface getAppartmentRentedState() {
+  public State getAppartmentRentedState() {
     return appartmentRentedState;
   }
 
-  public StateInterface getFullyRentedState() {
+  public State getFullyRentedState() {
     return fullyRentedState;
   }
 
@@ -62,7 +62,7 @@ public class Automat implements AutomatInterface {
     count = n;
   }
 
-  public void setState(StateInterface s) {
+  public void setState(State s) {
     state = s;
   }
 }

@@ -1,10 +1,9 @@
 package GoFpatterns.State.State_OOP.States;
 
-import GoFpatterns.State.State_OOP.Automat;
 import GoFpatterns.State.State_OOP.AutomatInterface;
-import GoFpatterns.State.State_OOP.StateInterface;
+import GoFpatterns.State.State_OOP.State;
 
-public class WaitingState implements StateInterface {
+public class WaitingState implements State {
 
   AutomatInterface automat;
 
