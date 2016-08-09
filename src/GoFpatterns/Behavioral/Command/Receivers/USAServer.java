@@ -1,7 +1,5 @@
 package GoFpatterns.Behavioral.Command.Receivers;
 
-import GoFpatterns.Behavioral.Command.Receiver;
-
 public class USAServer implements Receiver {
   String CLASS_NAME = getClass().getSimpleName();
 

@@ -2,6 +2,7 @@ package GoFpatterns.Behavioral.Command;
 
 import GoFpatterns.Behavioral.Command.Receivers.AsiaServer;
 import GoFpatterns.Behavioral.Command.Receivers.EuropeServer;
+import GoFpatterns.Behavioral.Command.Receivers.Receiver;
 import GoFpatterns.Behavioral.Command.Receivers.USAServer;
 
 public class TestReceivers {

@@ -1,4 +1,4 @@
-package GoFpatterns.Behavioral.Command;
+package GoFpatterns.Behavioral.Command.Receivers;
 
 public interface Receiver {
   public void connect();
