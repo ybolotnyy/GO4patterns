@@ -35,4 +35,13 @@ public class Invoker {
       }
     }
   }
+
+  public void undo() {
+    System.out.printf("\n\n  undo '%s' operation.... \n\n", name);
+    for (Command c : commands) {
+      if (c != null) {
+        c.undo();
+      }
+    }
+  }
 }

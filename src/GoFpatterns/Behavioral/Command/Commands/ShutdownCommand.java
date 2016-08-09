@@ -15,4 +15,11 @@ public class ShutdownCommand implements Command {
     receiver.disconnect();
     System.out.println();
   }
+
+  public void undo() {
+    receiver.connect();
+    receiver.reboot();
+    receiver.disconnect();
+    System.out.println();
+  }
 }

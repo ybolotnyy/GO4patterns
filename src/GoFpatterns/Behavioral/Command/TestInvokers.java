@@ -38,7 +38,7 @@ public class TestInvokers {
     rebootAllservers.run();
     shutdownAllservers.run();
 
-
+    shutdownAllservers.undo();
   }
 
 }

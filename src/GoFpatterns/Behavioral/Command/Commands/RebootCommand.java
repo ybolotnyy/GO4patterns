@@ -15,4 +15,8 @@ public class RebootCommand implements Command {
     receiver.disconnect();
     System.out.println();
   }
+
+  public void undo() {
+    System.out.println("Sorry, can't undo a reboot....");
+  }
 }
